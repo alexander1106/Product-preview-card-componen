@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main-contenedor{
+    width: 600px;
+    display: flex;
+    height: 470px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0.3px 0.2px 5px rgb(88, 88, 88);
+
+}
+.main-contenedor-img-mobil{
+    display: none;
+}
+.main-contenedor-img{
+    width: 50%;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.main-contenedor-text{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+
+
+}
+.main-contenedor-text-cont{
+   width: 80%;
+}
+.main-contenedor-text .perfume{
+    color: gray;
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin-bottom: 17px;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main-contenedor-text h1{
+    font-family: 'Fraunces', serif;
+    font-size: 35px;   
+    margin-bottom: 24px;
+    letter-spacing: -0.6px;
+}
+.main-contenedor-text-cont .parrafo{
+    color: gray;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+    font-family: sans-serif;
+}
+.main-contenedor-precio{
+    height: 37px;
+    display: flex;
+    margin-bottom: 36px;
+    font-family: 'Fraunces', serif;
+    justify-content: space-around;
+}
+.main-contenedor-precio-central{
+    font-size: 34px;
+   color: hsl(158, 36%, 37%);
+}
+.main-contenedor-precio-opcional{
+    font-size: 17px;
+    color: gray;
+    font-weight: 200;
+    text-decoration: line-through;
+}
+button{
+    width: 100%;
+    height: 45px;
+    border: 0px;
+    border-radius: 9px;
+    background-color: hsl(158, 36%, 37%);
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    cursor:pointer
+}
+button:hover{
+    background-color: hsl(158, 35%, 25%);
+}
+button svg{
+    margin-right: 7px;
+}
+
+@media (max-width:400px){
+    main{
+        width: 100%;
+
+    }
+   .main-contenedor{
+    width: 95%;
+    display: block;
+    margin: auto;
+    height: 95%;
+    overflow: auto;
+   }
+   .main-contenedor-img {
+    display: none;
+    }
+    .main-contenedor-img-mobil{
+        display: block;
+        width: 100%;
+        height: 40%;
+    }
+    .main-contenedor-img-mobil img{
+        object-fit: cover;
+    }
+    .main-contenedor-text{
+        width: 100%;
+        height: 60%;
+    }
+    .main-contenedor-text .perfume{
+        padding-top: 10px;
+    }
+    .main-contenedor-text h1{
+        font-size: 27px;
+    }
+    button{
+        margin-bottom: 6%;
+    }
+   }
+
+   
+   
+
